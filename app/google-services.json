@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "298778268130",
+    "project_id": "stealthchat-03",
+    "storage_bucket": "stealthchat-03.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298778268130:android:160a33b09c9a4b73fb29bb",
+        "android_client_info": {
+          "package_name": "com.example.stealthchat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2XZ26AjI2zlczDk8FcRbErPuzNneEWPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
