@@ -12,36 +12,17 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.stealthchat.ui.theme.StealthchatTheme
+import android.util.Log
+import com.google.firebase.FirebaseApp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContent {
-            StealthchatTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Stealth User",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
-            }
-        }
-    }
-}
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+        // Initialize Firebase
+        FirebaseApp.initializeApp(this)
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    StealthchatTheme {
-        Greeting("Android")
+        // Debug log to check Firebase setup
+        Log.d("FirebaseCheck", "🔥 Firebase initialized successfully!")
     }
 }

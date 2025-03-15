@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -40,7 +41,14 @@ android {
 }
 
 dependencies {
-
+    // Import the Firebase BoM (Always keeps versions compatible)
+    implementation(platform("com.google.firebase:firebase-bom:33.10.0"))
+    // Firebase Authentication (For user authentication)
+    implementation("com.google.firebase:firebase-auth")
+    // Firebase Cloud Messaging (For push notifications)
+    implementation("com.google.firebase:firebase-messaging")
+    // Firebase Analytics (Optional, used for tracking app events)
+    implementation("com.google.firebase:firebase-analytics")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
