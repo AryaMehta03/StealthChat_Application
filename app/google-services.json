@@ -12,7 +12,20 @@
           "package_name": "com.example.stealthchat"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "298778268130-e73h56vo962l2ki9k0ogsiqe5sk9e8v6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.stealthchat",
+            "certificate_hash": "50fce4d1af7cd785f457c58cc4a6f8db01d31198"
+          }
+        },
+        {
+          "client_id": "298778268130-r3f3g24cg8uecro2uua2fk8nl4d3tvcd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyC2XZ26AjI2zlczDk8FcRbErPuzNneEWPA"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298778268130-r3f3g24cg8uecro2uua2fk8nl4d3tvcd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

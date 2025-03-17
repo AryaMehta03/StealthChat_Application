@@ -47,8 +47,12 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     // Firebase Cloud Messaging (For push notifications)
     implementation("com.google.firebase:firebase-messaging")
+    // This is for Google Sign-In
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
     // Firebase Analytics (Optional, used for tracking app events)
     implementation("com.google.firebase:firebase-analytics")
+    // Add the Firestore dependency for Java
+    implementation("com.google.firebase:firebase-firestore")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -57,6 +61,10 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.androidx.activity)
+    implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
